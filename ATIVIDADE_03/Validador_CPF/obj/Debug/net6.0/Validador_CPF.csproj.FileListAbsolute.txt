@@ -1,0 +1,15 @@
+C:\workspace\dotnet\Validador_CPF\bin\Debug\net6.0\Validador_CPF.exe
+C:\workspace\dotnet\Validador_CPF\bin\Debug\net6.0\Validador_CPF.deps.json
+C:\workspace\dotnet\Validador_CPF\bin\Debug\net6.0\Validador_CPF.runtimeconfig.json
+C:\workspace\dotnet\Validador_CPF\bin\Debug\net6.0\Validador_CPF.dll
+C:\workspace\dotnet\Validador_CPF\bin\Debug\net6.0\Validador_CPF.pdb
+C:\workspace\dotnet\Validador_CPF\obj\Debug\net6.0\Validador_CPF.csproj.AssemblyReference.cache
+C:\workspace\dotnet\Validador_CPF\obj\Debug\net6.0\Validador_CPF.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\dotnet\Validador_CPF\obj\Debug\net6.0\Validador_CPF.AssemblyInfoInputs.cache
+C:\workspace\dotnet\Validador_CPF\obj\Debug\net6.0\Validador_CPF.AssemblyInfo.cs
+C:\workspace\dotnet\Validador_CPF\obj\Debug\net6.0\Validador_CPF.csproj.CoreCompileInputs.cache
+C:\workspace\dotnet\Validador_CPF\obj\Debug\net6.0\Validador_CPF.dll
+C:\workspace\dotnet\Validador_CPF\obj\Debug\net6.0\refint\Validador_CPF.dll
+C:\workspace\dotnet\Validador_CPF\obj\Debug\net6.0\Validador_CPF.pdb
+C:\workspace\dotnet\Validador_CPF\obj\Debug\net6.0\Validador_CPF.genruntimeconfig.cache
+C:\workspace\dotnet\Validador_CPF\obj\Debug\net6.0\ref\Validador_CPF.dll
