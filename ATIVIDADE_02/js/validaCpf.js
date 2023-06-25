@@ -2,13 +2,16 @@
 class Validador {
     static Valida(cpf) {
       const _cpf = cpf.replace(/[ .-]/g, '');
+      console.log(cpf);
       const primeiro_digito = this.Calcula_Primeiro_Digito(_cpf);
       const segundo_digito = this.Calcula_Segundo_Digito(_cpf, primeiro_digito);
   
       if (parseInt(_cpf[9]) === primeiro_digito && parseInt(_cpf[10]) === segundo_digito) {
         console.log('CPF Válido!');
+        return true;
       } else {
         console.log('CPF Inválido!');
+        return false;
       }
     }
   
@@ -49,6 +52,3 @@ class Validador {
       return 11 - (total % 11);
     }
   }
-  
-
-export default Validador;

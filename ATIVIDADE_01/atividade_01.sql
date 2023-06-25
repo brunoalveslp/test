@@ -2,6 +2,7 @@ CREATE DATABASE test;
 
 USE test;
 
+-- Possibilidade 2
 
 CREATE TABLE motoristas (
     motorista_id INT NOT NULL AUTO_INCREMENT,

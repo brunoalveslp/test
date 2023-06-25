@@ -77,9 +77,10 @@ body {
 .container label {
     font-size: .8rem;
     padding: 1px;
+    padding-bottom: 0;
     background-color: var(--background-form);
     position: absolute;
-    top: -8px;
+    top: -.7rem;
     left: 3px;
 }
 
@@ -138,17 +139,92 @@ body {
     height: 70px;
 }
 
-.show {
-    display: flex;
-    transition: 2s;
+.invalid {
+    border-color: var(--warning);
 }
 
-.confirm {
-    width: 400px;
-    height: 200px;
-    background: red;
-    margin: 50px auto;
+.validation {
+    display: none;
+    position: absolute;
+    background-color: var(--background-form);
+    color: var(--warning);
+    right: 0;
+    bottom: -1rem;
+    font-size: .8rem;
+}
 
+.container .error {
+    outline-color: var(--warning);
+}
+
+.container .error:focus-within {
+    outline-color: var(--warning);
+}
+
+.show {
+    display: flex;
+}
+
+.confirm-box {
+    position: relative;
+    text-align: center;
+    padding: 1.5rem .5rem .5rem .5rem;
+    width: 23rem;
+    height: 10rem;
+    background: var(--background-color);
+    margin: auto auto;
+    font-size: 1.4rem;
+    border: none;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.close-box {
+    font-size: .8rem;
+    position: absolute;
+    right: .2rem;
+    top: .2rem;
+}
+
+.close-box .close {
+    border: none;
+    font-size: 1rem;
+}
+
+.valido {
+    background-color: var(--success);
+    color: var(--success);
+    border-color: var(--success);
+    outline-color: var(--success);
+}
+
+.cpf {
+    background-color: var(--background-form);
+    padding: 2px;
+    border-radius: 5px;
+}
+
+
+dialog .btn-box .btn {
+    width: 6rem;
+    height: 3rem;
+    margin: 1rem;
+    border-radius: 5px;
+    background-color: var(--success);
+    color: var(--text-button);
+    font-size: 1rem;
+    border: none;
+}
+
+dialog .btn-box .no {
+    background-color: var(--warning);
+}
+
+dialog .btn-box .btn:active {
+    scale: .96;
 }
 
 @media (max-width: 800px){
@@ -156,13 +232,32 @@ body {
         width: 100%;
         height: 100%;
         padding: 1rem;
+        margin: 1rem 0;
+        box-shadow: 0 0 0 0;
     }
-
+    
     .container-header {
         margin: 0 0 1rem 0;
+        margin-bottom: 3rem;
     }
 
     .input {
         width: 90%;
     }
+
+    .confirm-box {
+        width: 60%;
+        height: 10rem;
+    }
+
+    dialog .btn-box .btn {
+        width: 4rem;
+        height: 2rem;
+    }
+
+    .message {
+        margin: .2rem;
+        width: 300px;
+    }
+
 }

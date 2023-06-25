@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/validaCpf.js"></script>
     <script defer src="./js/main.js"></script>
     <title>Cadastro de Notas</title>
 </head>
 <body>
     <div class="message warning">
             <span>Verifique se todas as informações estão preenchidas corretamente</span>
-            <button>X</button>
+            <button class="close-message close-error">X</button>
     </div>
     <div class="message success">
         <span>Cadastrado com Sucesso</span>
-        <button>X</button>
+        <button class="close-message close-success">X</button>
     </div>
     <div class="container">
         <div class="container-header">
@@ -27,52 +28,62 @@
                 <label for="nome">
                     Nome do Motorista
                 </label>
-                <input type="text" name="nome" id="nome" required>
-                <span></span>
+                <input class="inputs" type="text" name="nome" id="nome" required>
+                <span class="validation"> * O nome deve ter no mínimo 5 caracteres.</span>
             </div>
             <div class="input">
                 <label for="cpf">
                     CPF
                 </label>
-                <input type="text" name="cpf" id="cpf" maxlength="14" required>
-                <span></span>
+                <input class="inputs" type="text" name="cpf" id="cpf" maxlength="14" required>
+                <span class="validation">* Número de CPF inválido.</span>
+                <span class="validation cpf">* Número de CPF Válido!</span>
             </div>
             <div class="input">
                 <label for="placa">
                     Número da Placa
                 </label>
-                <input type="text" name="numero_placa" id="placa" maxlength="7" required>
-                <span></span>
+                <input class="inputs" type="text" name="numero_placa" id="placa" maxlength="7" required>
+                <span class="validation">* Número de Placa Inválido.</span>
             </div>
             <div class="input">
                 <label for="data">
                     Data da Nota
                 </label>
-                <input type="date" name="data_nf" id="data" required>
+                <input class="inputs" type="date" name="data_nf" id="data" required>
+                <span class="validation">* Data Inválida.</span>
             </div>
             <div class="input">
                 <label for="distancia">
                     Distancia Percorrida
                 </label>
-                <input type="number" name="distancia_km" id="distancia" required>
-                <span></span>
+                <input class="inputs" type="number" value=0 name="distancia_km" id="distancia" required>
+                <span class="validation">* Distancia deve ser maior que 0.</span>
             </div>
             <div class="input">
                 <label for="valor_litro">
                     Valor por Litro
                 </label>
-                <input type="number" name="valor_litro" id="valor_litro" required>
-                <span></span>
+                <input class="inputs" type="number" value=0 name="valor_litro" id="valor_litro" required>
+                <span class="validation">* Valor do litro deve ser maior que zero.</span>
             </div>
             <div class="input">
                 <label for="valor_total">
                     Valor Total
                 </label>
-                <input type="number" name="valor_total" id="valor_total" required>
-                <span></span>
+                <input class="inputs" type="number" value=0 name="valor_total" id="valor_total" required>
+                <span class="validation">* Valor total deve ser maior que zero.</span>
             </div>
             <dialog class="confirm-box">
-                <span>Deseja </span>
+                <span>Deseja cadastrar a nota?</span>
+                <div class="close-box">
+                    <span>Esc</span>
+                    <button class="close">X</button>
+                </div>
+                <div class="btn-box">
+                    <button class="btn yes">Sim</button>
+                    <button class="btn no">Não</button>
+                </div>
             </dialog>
             <button class="btn_submit" type="submit">Cadastrar</button>
         </form>
