@@ -9,37 +9,13 @@ Nesta tela em HTML, crie um botão “Gravar” que ao clicar chama uma função
 os campos estão preenchidos. Também crie uma função para ao digitar a quantidade de km rodados e o valor
 do litro do combustível, preenchaautomaticamente o valortotal.
 
-- nome
-- cpf
--numero_placa
-- data_nf
-- distancia_km
-- valor_litro
-- valor_total
-
-CREATE TABLE motoristas (
-    motorista_id INT NOT NULL AUTO_INCREMENT,
-    nome VARCHAR(200) NOT NULL,
-    cpf VARCHAR(11) NOT NULL,
-  	numero_placa VARCHAR(7) NOT NULL,
-	PRIMARY KEY (motorista_id)
-);
-
-CREATE TABLE notas (
-  nota_id INT NOT NULL AUTO_INCREMENT,
-  motorista_id INT NOT NULL,
-  data_nf DATE NOT NULL,
-  distancia_km DECIMAL(10, 3) NOT NULL,
-  valor_litro DECIMAL(5, 3) NOT NULL,
-  valor_total DECIMAL(13, 4) NOT NULL,
-  PRIMARY KEY (nota_id),
-  CONSTRAINT fk_motorista FOREIGN KEY (motorista_id) REFERENCES motoristas(motorista_id)
-);
-
 ## Documentação utilizada para tirar duvidas pontuais
 
 https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Input
 https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/form
 https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/dialog
 https://cdnjs.com/libraries/font-awesome
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/box-shadow
 https://fonts.google.com/specimen/Roboto?query=roboto
+https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+https://www.w3schools.com/jsref/event_onblur.asp

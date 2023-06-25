@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/main.js"></script>
+    <title>Cadastro de Notas</title>
 </head>
 <body>
-    
+    <div class="message warning">
+            <span>Verifique se todas as informações estão preenchidas corretamente</span>
+            <button>X</button>
+    </div>
+    <div class="message success">
+        <span>Cadastrado com Sucesso</span>
+        <button>X</button>
+    </div>
+    <div class="container">
+        <div class="container-header">
+            <h1>Cadastro de Nota</h1>
+            <span></span>
+        </div>
+        <form method="post" id="cadastro">
+            <div class="input">
+                <label for="nome">
+                    Nome do Motorista
+                </label>
+                <input type="text" name="nome" id="nome" required>
+                <span></span>
+            </div>
+            <div class="input">
+                <label for="cpf">
+                    CPF
+                </label>
+                <input type="text" name="cpf" id="cpf" maxlength="14" required>
+                <span></span>
+            </div>
+            <div class="input">
+                <label for="placa">
+                    Número da Placa
+                </label>
+                <input type="text" name="numero_placa" id="placa" maxlength="7" required>
+                <span></span>
+            </div>
+            <div class="input">
+                <label for="data">
+                    Data da Nota
+                </label>
+                <input type="date" name="data_nf" id="data" required>
+            </div>
+            <div class="input">
+                <label for="distancia">
+                    Distancia Percorrida
+                </label>
+                <input type="number" name="distancia_km" id="distancia" required>
+                <span></span>
+            </div>
+            <div class="input">
+                <label for="valor_litro">
+                    Valor por Litro
+                </label>
+                <input type="number" name="valor_litro" id="valor_litro" required>
+                <span></span>
+            </div>
+            <div class="input">
+                <label for="valor_total">
+                    Valor Total
+                </label>
+                <input type="number" name="valor_total" id="valor_total" required>
+                <span></span>
+            </div>
+            <dialog class="confirm-box">
+                <span>Deseja </span>
+            </dialog>
+            <button class="btn_submit" type="submit">Cadastrar</button>
+        </form>
+    </div>
 </body>
 </html>
