@@ -4,6 +4,7 @@
     http://clubes.obmep.org.br/blog/a-matematica-nos-documentos-a-matematica-dos-cpfs/
 
 ## FIz em C# o qual tenho maior diminio e implementei uma classe estatica pois, não precisaria ser instanciada para realizar seu uso.
+## Refiz a mesma classe em JavaScript e a usei validando o campo CPF dinamicamente na interface
 
 
 ## Um CPF é uma sequÊncia de 9 dígitos, seguido por dois digitos verificadores.

@@ -2,7 +2,7 @@
 
 ## Descrição 
 
-X 1) Você trabalha na prefeitura municipal de Brusque no setor de lançamento de notas de combustível, e seu
+1) Você trabalha na prefeitura municipal de Brusque no setor de lançamento de notas de combustível, e seu
 superiorsolicitou que seja criado um controle para armazenar algumas informações que atualmente o sistema
 não atende. Neste controle foi solicitado a criação de uma ou mais tabela(s) para armazenar as seguintes
 informações: Nome do motorista, CPF, número da placa do veículo, data do abastecimento, quantidade de
@@ -16,8 +16,9 @@ Nesta tela em HTML, crie um botão “Gravar” que ao clicar chama uma função
 os campos estão preenchidos. Também crie uma função para ao digitar a quantidade de km rodados e o valor
 do litro do combustível, preenchaautomaticamente o valortotal.
 
-X 3) Crie uma classe com um método que recebe como parâmetro um CPF e realiza a validação do mesmo. Se o
+3) Crie uma classe com um método que recebe como parâmetro um CPF e realiza a validação do mesmo. Se o
 CPF informado for inválido, exibida uma mensagem. OBS: Esta classe não precisa ter relação com a página
 HTML.
 
 
+## Dividi em 3 pastas separadas para cada parte do codigo

@@ -1,6 +1,9 @@
 
+const nome = document.querySelector('#nome');
 const cpf = document.querySelector('#cpf');
 const cpf_span = document.querySelector('.cpf');
+const data = document.querySelector('#data')
+const placa = document.querySelector('#placa')
 const distancia = document.querySelector('#distancia');
 const valor_litro = document.querySelector('#valor_litro');
 const valor_total = document.querySelector('#valor_total');
@@ -16,6 +19,8 @@ const inputs = document.querySelectorAll('.inputs');
 const messages = document.querySelectorAll('.message');
 const close_btns = document.querySelectorAll('.close-message');
 
+console.log(placa.value.length);
+
 close_btns.forEach(element => {
     element.addEventListener('click', (e) =>{
         if(element.classList.contains('close-error')){
@@ -27,8 +32,11 @@ close_btns.forEach(element => {
 });
 
 button.addEventListener("click", (event) => {
-  event.preventDefault();   
-  confirm_box.showModal(); 
+  event.preventDefault();
+  console.log(placa.value.length);
+  if(validaCampos()){
+      confirm_box.showModal(); 
+  }  
 });
 
 confirm_yes.addEventListener('click', (event)=>{
@@ -107,11 +115,8 @@ window.addEventListener('keypress', (event) => {
     if(element == 'nome'){
         index = 0;
         len = 4
-    } else if(element == 'cpf'){
-        index = 1;
-        len = 13;
     } else if(element == 'numero_placa'){
-        index = 2;
+        index = 3;
         len = 7;
     } else if(element == 'data_nf'){
         index = 3;
@@ -128,6 +133,55 @@ window.addEventListener('keypress', (event) => {
         }
     }
 });
+
+const validaCampos = () => {
+    let result = true;
+
+    if(nome.value.length < 5){
+        nome.classList.add('error');
+        campos[0].classList.add('show');
+        result = false;
+    }
+
+    if(cpf.value.length < 13){
+        cpf.classList.add('error');
+        campos[1].classList.add('show');
+        result = false;
+
+    }
+
+    if(placa.value.length < 6){
+        placa.classList.add('error');
+        campos[3].classList.add('show');
+        result = false;
+    }
+
+    if(data.value.length < 6){
+        data.classList.add('error');
+        campos[4].classList.add('show');
+        result = false;
+    }
+
+    if(distancia.value <= 0){
+        distancia.classList.add('error');
+        campos[5].classList.add('show');
+        result = false;
+    }
+
+    if(valor_litro.value == 0){
+        valor_litro.classList.add('error');
+        campos[6].classList.add('show');
+        result = false;
+    }
+
+    if(valor_total.value == 0){
+        valor_total.classList.add('error');
+        campos[7].classList.add('show');
+        result = false;
+    }
+
+    return result;
+};
 
 const validaFormulario = () => {
 

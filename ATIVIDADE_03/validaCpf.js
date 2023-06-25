@@ -2,6 +2,7 @@
 class Validador {
     static Valida(cpf) {
       const _cpf = cpf.replace(/[ .-]/g, '');
+      console.log(cpf);
       const primeiro_digito = this.Calcula_Primeiro_Digito(_cpf);
       const segundo_digito = this.Calcula_Segundo_Digito(_cpf, primeiro_digito);
   
