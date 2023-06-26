@@ -49,18 +49,9 @@ confirm_yes.addEventListener('click', (event)=>{
     event.preventDefault();
     confirm_box.close();
     success.classList.add('show');
-    removeClass();
+    removeClasse();
 
-    nome.value = '';
-    cpf.value = '';
-    placa.value = '';
-    data.value = '';
-    distancia.value = '';
-    valor_litro.value = '';
-    valor_total.value = '';
-    for(let i = 0; i < 4; i++){
-        campos[i].classList.remove('show');
-    }
+    resetaCampos();
 });
 
 confirm_no.addEventListener('click', ()=>{
@@ -159,7 +150,7 @@ const validaCampos = () => {
 
     if(result == false){
         warning.classList.add('show');
-        removeClass();
+        removeClasse();
     }
 
     return result;
@@ -213,7 +204,20 @@ const validaValor = (element, index) => {
     }
 }
 
-const removeClass = () => {
+const resetaCampos = () => {
+    nome.value = '';
+    cpf.value = '';
+    placa.value = '';
+    data.value = '';
+    distancia.value = '';
+    valor_litro.value = '';
+    valor_total.value = '';
+    for(let i = 0; i < 4; i++){
+        campos[i].classList.remove('show');
+    }
+}
+
+const removeClasse = () => {
     setTimeout(() => {
         success.classList.remove('show');
         warning.classList.remove('show');
