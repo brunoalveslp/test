@@ -9,7 +9,7 @@ Nesta tela em HTML, crie um botão “Gravar” que ao clicar chama uma função
 os campos estão preenchidos. Também crie uma função para ao digitar a quantidade de km rodados e o valor
 do litro do combustível, preenchaautomaticamente o valortotal.
 
-### Informações do Projeo
+### Informações do Projeto
 - HTML
 - CSS
 - JavaScript
