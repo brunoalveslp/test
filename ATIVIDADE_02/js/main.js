@@ -38,15 +38,17 @@ close_btns.forEach(element => {
     });
 });
 
-button.addEventListener("click", (event) => {
+button.addEventListener('click', (event) => {
   event.preventDefault();
   if(validaCampos()){
-      confirm_box.showModal(); 
+      console.log(confirm_box.showModal()); 
+        success.classList.add('show');
+        removeClass();
   }  
 });
 
 confirm_yes.addEventListener('click', ()=>{
-    confirm_box.close();
+    confirm_box.close(); 
 });
 
 confirm_no.addEventListener('click', ()=>{
@@ -157,25 +159,33 @@ const validaCamposDinamic = () => {
     let element = event.target.name;
     if(element == 'nome'){
         index = 0;
-        len = 4
+        len = 4;
+    }else if(element == 'cpf'){
+        index = 1;
+        len = 13;
     } else if(element == 'numero_placa'){
-        index = 3;
-        len = 7;
+        index = 2;
+        len = 6;
     } else if(element == 'data_nf'){
         index = 3;
         len = 1;
-    } else if(element == 'cpf'){
-        index = 1;
-        len = 13;
-    }
+    } 
 
     if(inputs[index]){
         if(inputs[index].value.length < len){
             inputs[index].classList.add('error');
-            campos[index].classList.add('show');
+            if(index >= 2){
+                campos[index+1].classList.add('show');
+            } else {
+                campos[index].classList.add('show');
+            }
         } else {
             inputs[index].classList.remove('error');
-            campos[index].classList.remove('show');
+            if(index >= 2){
+                campos[index+1].classList.remove('show');
+            } else {
+                campos[index].classList.remove('show');
+            }
         }
     }
 };
