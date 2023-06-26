@@ -22,6 +22,13 @@ const close_btns = document.querySelectorAll('.close-message');
 
 // Event Listeners
 
+button.addEventListener('click', (event) => {
+  event.preventDefault();
+  if(validaCampos()){
+      confirm_box.showModal(); 
+  }  
+});
+
 close_btns.forEach(element => {
     element.addEventListener('click', () =>{
         if(element.classList.contains('close-error')){
@@ -38,17 +45,19 @@ close_btns.forEach(element => {
     });
 });
 
-button.addEventListener('click', (event) => {
-  event.preventDefault();
-  if(validaCampos()){
-      console.log(confirm_box.showModal()); 
-        success.classList.add('show');
-        removeClass();
-  }  
-});
+confirm_yes.addEventListener('click', (event)=>{
+    event.preventDefault();
+    confirm_box.close();
+    success.classList.add('show');
+    removeClass();
 
-confirm_yes.addEventListener('click', ()=>{
-    confirm_box.close(); 
+    nome.value = '';
+    cpf.value = '';
+    placa.value = '';
+    data.value = '';
+    distancia.value = '';
+    valor_litro.value = '';
+    valor_total.value = '';
 });
 
 confirm_no.addEventListener('click', ()=>{
