@@ -11,7 +11,7 @@ do litro do combustível, preenchaautomaticamente o valortotal.
 
 ### Pagina criada com HTML, CSS e JavaScript putos
 
-# Rodando no link https://test-tan-phi.vercel.app/
+# Deploy no link https://test-tan-phi.vercel.app/
 
 ## Documentação utilizada para tirar duvidas pontuais
 
