@@ -40,14 +40,12 @@ close_btns.forEach(element => {
 
 button.addEventListener("click", (event) => {
   event.preventDefault();
-  console.log(placa.value.length);
   if(validaCampos()){
       confirm_box.showModal(); 
   }  
 });
 
 confirm_yes.addEventListener('click', ()=>{
-    validaFormulario();
     confirm_box.close();
 });
 
