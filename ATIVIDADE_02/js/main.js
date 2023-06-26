@@ -58,6 +58,9 @@ confirm_yes.addEventListener('click', (event)=>{
     distancia.value = '';
     valor_litro.value = '';
     valor_total.value = '';
+    for(let i = 0; i < 4; i++){
+        campos[i].classList.remove('show');
+    }
 });
 
 confirm_no.addEventListener('click', ()=>{
@@ -182,6 +185,7 @@ const validaCamposDinamic = () => {
 
     if(inputs[index]){
         if(inputs[index].value.length < len){
+            console.log(inputs[index].value.length)
             inputs[index].classList.add('error');
             if(index >= 2){
                 campos[index+1].classList.add('show');
