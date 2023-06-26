@@ -54,7 +54,8 @@ confirm_yes.addEventListener('click', (event)=>{
     resetaCampos();
 });
 
-confirm_no.addEventListener('click', ()=>{
+confirm_no.addEventListener('click', (event)=>{
+    event.preventDefault();
     confirm_box.close();
 });
 
