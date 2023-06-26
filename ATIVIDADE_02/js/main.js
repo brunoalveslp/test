@@ -109,43 +109,56 @@ const validaCampos = () => {
         nome.classList.add('error');
         campos[0].classList.add('show');
         result = false;
+    } else {
+        campos[0].classList.remove('show');
     }
 
     if(cpf.value.length < 13){
         cpf.classList.add('error');
         campos[1].classList.add('show');
         result = false;
-
+    } else {
+        campos[1].classList.remove('show');
     }
 
     if(placa.value.length < 6){
         placa.classList.add('error');
         campos[3].classList.add('show');
         result = false;
+    } else {
+        campos[3].classList.remove('show');
     }
 
     if(data.value.length < 6){
         data.classList.add('error');
         campos[4].classList.add('show');
         result = false;
+    } else {
+        campos[4].classList.remove('show');
     }
 
     if(distancia.value <= 0){
         distancia.classList.add('error');
         campos[5].classList.add('show');
         result = false;
+    } else {
+        campos[5].classList.remove('show');
     }
 
     if(valor_litro.value == 0){
         valor_litro.classList.add('error');
         campos[6].classList.add('show');
         result = false;
+    } else {
+        campos[6].classList.remove('show');
     }
 
     if(valor_total.value == 0){
         valor_total.classList.add('error');
         campos[7].classList.add('show');
         result = false;
+    } else {
+        campos[7].classList.remove('show');
     }
 
     if(result == false){
