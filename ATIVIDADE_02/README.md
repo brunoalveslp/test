@@ -15,10 +15,10 @@ do litro do combustível, preenchaautomaticamente o valortotal.
 
 ## Documentação utilizada para tirar duvidas pontuais
 
-https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Input
-https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/form
-https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/dialog
-https://developer.mozilla.org/pt-BR/docs/Web/CSS/box-shadow
-https://fonts.google.com/specimen/Roboto?query=roboto
-https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
-https://www.w3schools.com/jsref/event_onblur.asp
+- https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Input
+- https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/form
+- https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/dialog
+- https://developer.mozilla.org/pt-BR/docs/Web/CSS/box-shadow
+- https://fonts.google.com/specimen/Roboto?query=roboto
+- https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+- https://www.w3schools.com/jsref/event_onblur.asp
