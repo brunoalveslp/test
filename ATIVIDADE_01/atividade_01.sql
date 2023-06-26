@@ -31,7 +31,7 @@ VALUES
   ('Gabriel Pereira', '12345678905', 'JKL3456', '2023-06-10', 65.5, 4.75, 310.625);
 
 
-SELECT * FROM notas;
+SELECT * FROM notas ORDER BY valor_total DESC;
 
 -- OPCAO 2
 
