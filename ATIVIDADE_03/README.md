@@ -31,7 +31,9 @@
 
 - Se o resto da divisão for 0 ou 1, o primeiro digito será 0, caso contrario sera o resultado de 11 menos o resto.
     244 % 11 = 2 sendo assim o segundo digito é 11 - 2 = 9
-    
+
+
+Assim comparamos os digitos finais do cpf digitado, com os que calculamos se forem iguais é valido.
 Sendo assim o CPF válido seria 123.456.789-09
 
 
