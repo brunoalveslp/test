@@ -5,4 +5,5 @@
 - Criei a tabela, populei e recuperei os dados
 - Fiz uma pequena melhoria possivel (segunda opção) pode-se dividir um uma tabela e usar o relacionamento de um para muitos entre elas
 pois um motorista pode ter varias notas por exemplo, porém isso pode fugir o escopo dos requisitos
-- populei as tabelas e selecionei os valores ordenados por valor do maior para o menor
+- populei as tabelas e selecionei os valores ordenados por valor do maior para o menor e criei uma view
+- Noto que poderia ser uma melhoria usar como campo requerido o numero da nota e usalo como chave primaria.
