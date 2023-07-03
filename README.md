@@ -21,4 +21,4 @@ CPF informado for inválido, exibida uma mensagem. OBS: Esta classe não precisa
 HTML.
 
 
-## Dividi em 3 pastas separadas para cada parte do codigo
+## Dividi em 3 pastas separadas para cada parte do desafio
